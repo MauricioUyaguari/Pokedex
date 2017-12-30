@@ -3,3 +3,18 @@ html, body {
 	padding: 0;
 	border: 0;
 }
+
+
+
+
+img {
+	heigh: 20px;
+	width: 20px
+}
+
+
+
+
+li, ul {
+	list-style: none;
+}

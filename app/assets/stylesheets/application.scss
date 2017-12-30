@@ -103,3 +103,31 @@
    text-align: center;
    color: $black;
  }
+
+
+
+.mainImg {
+  height: 300px;
+  width: 400px;
+
+}
+
+
+.main-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.pokemon-chosen {
+  font-size: 40px;
+  background-color: red;
+}
+
+
+.ulpoke {
+    padding: 0 10px 0 0;
+    width: 300px;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+}
