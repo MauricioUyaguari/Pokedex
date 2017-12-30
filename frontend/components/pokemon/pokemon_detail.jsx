@@ -1,9 +1,6 @@
 import React from 'react';
-
-
-
-
-
+import ItemsDetailContainer from '../items/items_detail_container';
+import ItemsIndexItem from '../items/items_index_item';
 
 class PokemonDetail extends React.Component {
 
@@ -36,6 +33,10 @@ class PokemonDetail extends React.Component {
       <li>{move}</li>
     ));
 
+    const renderItems = this.props.items.map(item => (
+      <ItemsIndexItem key={item.id} item={item}/>
+    ));
+
 
     return (<div>
       <ul> Name: {pokemon.name}
@@ -48,6 +49,15 @@ class PokemonDetail extends React.Component {
             { moves }
           </ul>
         </li>
+
+        <li> items :
+          <ul>
+            { renderItems }
+          </ul>
+        </li>
+
+
+        <ItemsDetailContainer />
       </ul>
     </div>)
 

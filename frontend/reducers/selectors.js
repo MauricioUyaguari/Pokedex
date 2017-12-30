@@ -2,9 +2,11 @@
 
 
 
-const selectAllPokemon = (state) => {
+export const selectAllPokemon = (state) => {
 return Object.values(state.entities.pokemon);
 };
 
 
-export default selectAllPokemon;
+export const selectAllItems = (items) => {
+return Object.values(items)
+};

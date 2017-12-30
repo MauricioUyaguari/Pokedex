@@ -7,7 +7,7 @@ import { HashRouter, Route} from 'react-router-dom';
 import { receiveAllPokemon, requestAllPokemon, requestPokemon, receivePokemon } from './actions/pokemon_actions';
 import configureStore from './store/store';
 import * as Util  from './util/api_util';
-import selectAllPokemon from './reducers/selectors';
+import { selectAllPokemon } from './reducers/selectors';
 
 
 
