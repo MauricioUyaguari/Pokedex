@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemsDetailContainer from '../items/items_detail_container';
 import ItemsIndexItem from '../items/items_index_item';
+import { HashRouter, Route } from 'react-router-dom';
 
 class PokemonDetail extends React.Component {
 
@@ -56,8 +57,7 @@ class PokemonDetail extends React.Component {
           </ul>
         </li>
 
-
-        <ItemsDetailContainer />
+        <Route path='/pokemon/:pokemonId/items/:itemId' component={ItemsDetailContainer}/>
       </ul>
     </div>)
 

@@ -12,6 +12,7 @@ const ItemsIndexItem = (props) => {
       <li>
         <span> {id}</span>
         <span> {name}</span>
+        <br></br>
         <img className="mainImg"src={image_url}></img>
       </li>
     </Link>

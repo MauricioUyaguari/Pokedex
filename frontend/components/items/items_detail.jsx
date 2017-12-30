@@ -10,7 +10,21 @@ class ItemsDetail extends React.Component {
 
   render(){
 
-    return(<span>this is where the items go</span>)
+
+
+
+    const { id, name, pokemon_id, price, happiness, image_url} = this.props.item;
+
+    return(
+      <div> Item Information
+        <ul>
+          <li> Name: {name}</li>
+          <li> Price: {price}</li>
+          <li> Happiness: {happiness}</li>
+        </ul>
+      </div>
+
+    )
   }
 
 

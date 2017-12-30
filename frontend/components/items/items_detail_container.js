@@ -4,7 +4,8 @@ import ItemsDetail from './items_detail';
 
 
 const mapStateToProps = (state, ownProps) => ( {
-  state: state
+  state: state,
+  item: state.entities.items[ownProps.match.params.itemId] || {}
 });
 
 
