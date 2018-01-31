@@ -14,3 +14,15 @@ export const fetchPokemon = (id) => {
   });
 
 };
+
+
+
+export const createPokemon = (pokemon) => {
+
+  return $.ajax({
+    url:'/api/pokemon',
+    type: 'POST',
+    data: { pokemon }
+
+  });
+};

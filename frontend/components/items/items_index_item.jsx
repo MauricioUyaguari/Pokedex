@@ -6,6 +6,7 @@ const ItemsIndexItem = (props) => {
 
     const {id, name, happiness, image_url , price, pokemon_id} = props.item
 
+
     return (
       <div>
       <Link to={`/pokemon/${pokemon_id}/items/${id}`}>
@@ -13,7 +14,7 @@ const ItemsIndexItem = (props) => {
         <span> {id}</span>
         <span> {name}</span>
         <br></br>
-        <img className="mainImg"src={image_url}></img>
+        <img className="itemImg"src={image_url}></img>
       </li>
     </Link>
       </div>

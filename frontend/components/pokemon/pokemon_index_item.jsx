@@ -10,7 +10,7 @@ const PokemonIndexItem = (props) => {
     <li>
       <span> {id}</span>
       <span> {name}</span>
-      <img src={image_url}></img>
+      <img  src={image_url}></img>
     </li>
   </Link>
     </div>

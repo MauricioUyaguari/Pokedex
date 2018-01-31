@@ -10,7 +10,7 @@ const itemsReducer = (state = {}, action) => {
     items.forEach((item) =>{
       newState[item.id] = item;
     });
-    return newState;
+    return merge({}, state,newState);
     default:
       return state;
   }

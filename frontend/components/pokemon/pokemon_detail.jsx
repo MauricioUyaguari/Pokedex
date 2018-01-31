@@ -30,13 +30,17 @@ class PokemonDetail extends React.Component {
     if( !pokemon || !pokemon.moves){
       return null;
     }
+
     const moves = pokemon.moves.map(move => (
       <li>{move}</li>
     ));
 
-    const renderItems = this.props.items.map(item => (
-      <ItemsIndexItem key={item.id} item={item}/>
-    ));
+
+    const renderItems = this.props.items.map(item => {
+      if(item.pokemon_id === this.props.pokemon.id){
+      return (<ItemsIndexItem key={item.id} item={item}/>);
+      }
+  });
 
 
     return (<div>
@@ -56,7 +60,6 @@ class PokemonDetail extends React.Component {
             { renderItems }
           </ul>
         </li>
-
         <Route path='/pokemon/:pokemonId/items/:itemId' component={ItemsDetailContainer}/>
       </ul>
     </div>)
